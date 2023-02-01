@@ -1,0 +1,109 @@
+nav ul li {
+    list-style: none;
+}
+.li_1 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items:flex-start;
+    font-size: 1.5rem;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: blue;
+}
+a {
+    color: blue;
+    display: flex;
+    justify-content:end;
+    align-items: flex-end;
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1, h2 {
+    color: blue;
+    font-size: 5rem;
+    margin-left: 17%;
+    font-family: monospace;
+}
+.pro1 {
+    border: solid 2px black;
+    background-color: gainsboro;
+    font-family: monospace;
+    font-size: 16px;
+    padding: 2%;
+    margin-top: -81.5%;
+    margin-left:60%;
+}
+
+.img1 {
+    width: 45%;
+    margin-left: 10%;
+    border: solid 2px black;
+}
+.h1_1 {
+    color: blue;
+    font-size: 5rem;
+    margin-left: 17%;
+    margin-top: 20%;
+    font-family: monospace;
+}
+body {
+    background-color: antiquewhite;
+}
+#size {
+    margin-left: 62%;
+    margin-top: -15%;
+    background-color: grey;
+    border: solid 1px black;
+    border-radius: 4em;
+    font-size: 17px;
+    color: white;
+}
+.basket {
+    background-color: grey;
+    font-size: 15px;
+    padding: 1%;
+    border-radius: 5em;
+    margin-left: 78%;
+    margin-right: 11%;
+    margin-top: -7%;
+    border: solid 1px  black;
+    color: white;
+}
+h4 {
+    font-family: monospace;
+    font-size: 22px;
+    margin-left: 60%;
+    margin-top: 5%;
+}
+h5 {
+    font-family: monospace;
+    margin-left: 60%;
+    margin-top: 3%;
+    font-size: 15px;
+}
+.p1 {
+    margin-left: 60%;
+    margin-top: 1%;
+    font-family: monospace;
+}
+.c2 {
+    font-size: 30px;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-around;
+    align-items: center;
+}
+.grid-container p {
+    border: solid 1px black;
+    font-family: monospace;
+    font-size:20px;
+    padding: 10%;
+    margin: 5%;
+    background-color: grey;
+}
+.grid-container a {
+    color: white;
+    justify-content: center;
+}
