@@ -12,21 +12,29 @@ nav ul li {
 a {
     color: blue;
     display: flex;
+    padding: 5px;
     justify-content:end;
-    align-items: flex-end;
+    align-items:flex-end;
     text-decoration: none;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-h1, h2 {
+h2 {
     color: blue;
     font-size: 5rem;
-    margin-left: 15%;
+    margin-left: 10%;
     margin-top: 10%;
+    font-family: monospace;
+}
+h1 {
+    color: blue;
+    font-size: 5rem;
+    margin-top: 10%;
+    margin-right: 60%;
     font-family: monospace;
 }
 .pro1 {
     border: solid 2px black;
-    background-color: gainsboro;
+    background-color:ghostwhite;
     font-family: monospace;
     font-size: 18px;
     padding: 2%;
