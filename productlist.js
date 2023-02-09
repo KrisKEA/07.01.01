@@ -3,8 +3,6 @@ console.log("sidenVises");
 const urlParams = new URLSearchParams(window.location.search);
 const cat = urlParams.get("cat");
 const url = `https://kea-alt-del.dk/t7/api/products?limit=20&category=${cat}`;
-const id = produkt.id;
-const imagePath = `https://kea-alt-del.dk/t7/images/webp/640/${id}.webp`;
 
 async function hentData() {
     const response = await fetch(url);
@@ -18,6 +16,8 @@ document.querySelector(".c2").textContent = cat;
 function visProdukt(produkt) {
     console.log(produkt);
     const template = document.querySelector("#templateOne").content;
+    const id = produkt.id;
+    const imagePath = `https://kea-alt-del.dk/t7/images/webp/640/${id}.webp`;
     const copy = template.cloneNode(true);
     copy.querySelector("h3").textContent = produkt.productdisplayname;
     copy.querySelector("h4").textContent = produkt.subcategory;
