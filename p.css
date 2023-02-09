@@ -1,5 +1,10 @@
 nav ul li {
     list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 18px;
 }
 .li_1 {
     display: flex;
@@ -7,10 +12,10 @@ nav ul li {
     align-items:flex-start;
     font-size: 1.5rem;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: blue;
+    color: darkblue;
 }
 a {
-    color: blue;
+    color: darkblue;
     display: flex;
     padding: 5px;
     justify-content:end;
@@ -18,37 +23,83 @@ a {
     text-decoration: none;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+.udsolgt::before {
+    content:"";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 50%;
+}
+.udsolgt::after{
+    content: "SOLD OUT";
+    font-family: monospace;
+    padding: 2em;
+    color: grey;
+    font-size: 18px;
+    margin-left: 8%;
+}
+.udsolgt img {
+    opacity: 50%;
+}
+.skjul{
+    display: none;
+}
+.liste {
+    list-style: none;
+}
+.liste a {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    text-decoration: underline;
+    display: flex;
+    justify-content: space-between;
+    padding: 1%;
+    float: left;
+}
 h2 {
-    color: blue;
+    color:darkblue;
     font-size: 5rem;
     margin-left: 10%;
     margin-top: 10%;
     font-family: monospace;
 }
-h1 {
-    color: blue;
+.box h2 {
+    color: darkblue;
     font-size: 5rem;
-    margin-top: 10%;
-    margin-right: 60%;
+    margin-bottom: 2%;
+    font-family: monospace; 
+}
+h1 {
+    color: darkblue;
+    font-size: 5rem;
+    margin-top: 5%;
+    margin-right: 64%;
     font-family: monospace;
 }
 .pro1 {
-    border: solid 2px black;
-    background-color:ghostwhite;
-    font-family: monospace;
-    font-size: 18px;
+    /* border: solid 2px black;
+    background-color:white; */
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
     padding: 2%;
-    margin-top: -82%;
-    margin-left:56%;
+    margin-top: -65%;
+    margin-left:53%;
 }
 .img1 {
-    width: 45%;
-    margin-left: 5%;
-    margin-top:1%;
+    width: 35%;
+    margin-left:-23%;
+    margin-top:7%;
     border: solid 2px black;
 }
 .h1_1 {
-    color: blue;
+    color: darkblue;
+    font-size: 5rem;
+    margin-left: 17%;
+    margin-top: 20%;
+    font-family: monospace;
+}
+h1 a {
+    color: darkblue;
     font-size: 5rem;
     margin-left: 17%;
     margin-top: 20%;
@@ -56,44 +107,65 @@ h1 {
 }
 body {
     background-color: antiquewhite;
+    
 }
 #size {
-    margin-left: 62%;
-    margin-top: -3%;
+    margin-left: 46%;
+    margin-top: -5%;
     background-color: grey;
-    border: solid 1px black;
-    border-radius: 4em;
-    font-size: 15px;
+    border: solid 1px darkblue;
+    border-radius: 1em;
+    padding: 2%;
+    font-size: 18px;
     color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .basket {
     background-color: grey;
-    font-size: 16px;
-    padding: 1%;
-    border-radius: 5em;
-    margin-left: 78%;
+    font-size: 20px;
+    padding: 2%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 1em;
+    margin-left: 31%;
     margin-right: 10%;
-    margin-top: -6%;
+    margin-top: -12%;
     color: white;
-    border: solid 1px  black;
+    border: solid 1px  darkblue;
     
 }
-h4 {
-    font-family: monospace;
-    font-size: 22px;
+#info {
     margin-left: 56%;
-    margin-top: 5%;
+    margin-top: 1%;
+    font-size: 16px;
 }
 h5 {
     font-family: monospace;
     margin-left: 56%;
     margin-top: 3%;
     font-size: 15px;
-}
+} 
 .p1 {
     margin-left: 56%;
     margin-top: 1%;
     font-family: monospace;
+}
+#farve {
+    margin-left: 56%;
+    margin-top: 2%;
+    font-size: 13px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#nummer {
+    margin-left: 56%;
+    margin-top: 1%;
+    font-size: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#model {
+    margin-left: 56%;
+    margin-top: 1%;
+    font-size: 13px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .c2 {
     font-size: 30px;
@@ -106,11 +178,14 @@ h5 {
 }
 .grid-container p {
     border: solid 1px black;
-    font-family: monospace;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size:20px;
     padding: 10%;
     margin: 5%;
-    background-color: grey;
+    background-color: darkblue; 
+}
+.grid-container p:hover {
+    opacity: 0.5;
 }
 .grid-container a {
     color: white;
@@ -118,182 +193,54 @@ h5 {
 }
 .col_1-1-1 {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-.img2 {
-    width: 80%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     margin-right: 4%;
-    opacity: 50%;
+    gap: 5px;
 }
-.img3 {
+.col_1-1-1 img {
     width: 80%;
-    margin-right: 8%;
+    border: solid 1px black;
 }
-.img4 {
-    width: 80%;
-    margin-right: 12%;
-    opacity: 50%;
-}
-.col_3 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-.img5 {
-    width: 80%;
-    margin-right: 4%;
-    margin-top: 20%;
-}
-.img6 {
-    width: 80%;
-    margin-right: 8%;
-    margin-top: 20%;
-    opacity: 50%;
-}
-.img7 {
-    width: 80%;
-    margin-right: 12%;
-    margin-top: 20%;
-    opacity: 50%;
-}
-.sold-out {
-    margin-left: -25%;
-    margin-top: -25%;
-}
-.sold-out2 {
-   margin-top: -38%;
-    grid-column: 3;
-    margin-left: 68%;
-}
-.sold-out3 {
-    margin-left: -28%;
-    margin-top: -39%;
-}
-.sold-out4 {
-    grid-column: 3;
-   margin-top: -39%;
-   margin-left: 68%;
-}
-.grid_3 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-.h4_1 {
-    grid-column: 1;
-    margin-left: 16%;
-}
-.h5_1 {
-    grid-column: 1;
-    margin-left: 16%;
-    margin-top: -5%;
-}
-.p_1 {
-    grid-column: 1;
-    margin-left: 16%;
-    font-family: monospace;
-}
-.p_1_2 {
-    grid-column: 1;
-    margin-left: 60%;
-    margin-top: -9%;
-    background-color: red;
+h3, h4 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 15px;
-    color: white;
-    padding:2%;
-    z-index: 1;
-    font-family: monospace;
+    margin-left: 20%;
+    color: black;
 }
-.p_1_3 {
-    grid-column: 3;
-    margin-left: 60%;
-    margin-top: -9%;
-    background-color: red;
+.rabat {
     font-size: 15px;
-    color: white;
-    padding:2%;
-    z-index: 1;
-    font-family: monospace;
+    color: red;
+    padding: 1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 5%;
+    margin-left: 15%;
 }
-.h4_2 {
-    grid-column: 2;
-    margin-left: 12%;
-    margin-top: -24%;
+.discount {
+    font-size: 15px;
+    color: red;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.h5_2 {
-    grid-column: 2;
-    margin-left: 12%;
-    margin-top: -18%;
-}
-.p_2 {
-    grid-column: 2;
-    margin-left: 12%;
-    margin-top: -7%;
-    font-family: monospace;
-}
-.h4_3 {
-    grid-column: 3;
-    margin-left: 8%;
-    margin-top: -26%;
-}
-.h5_3 {
-    grid-column: 3;
-    margin-left: 8%;
-    margin-top: -18%;
-}
-.p_3 {
-    grid-column: 3;
-    margin-left: 8%;
-    margin-top: -7%;
-    font-family: monospace;
-}
-.grid_3_1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-.h4_4 {
-    grid-column: 1;
+.pris {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 18px;
     margin-left: 20%;
-    margin-top: 5%;
+    color: black;
 }
-.h5_4 {
-    grid-column: 1;
-    margin-left: 20%;
-    margin-top:-5%;
+.rm {
+    text-decoration: underline;
+    color: black;
 }
-.p_4 {
-    grid-column: 1;
-    margin-left: 20%;
-    margin-top: 3%;
-    font-family: monospace;
+article img{
+    max-width: 100%;
 }
-.h4_5 {
-    grid-column: 2;
-    margin-left:20%;
-    margin-top: -16%;
+body, .col_1-1-1{
+    overflow-x: hidden;
 }
-.h5_5 {
-    grid-column: 2;
-    margin-left: 20%;
-    margin-top:-18%;
+
+@media screen and (min-width:700px){
+  .col_1-1-1 {
+    grid-column: 1/2;
+    
+  }
 }
-.p_5 {
-    grid-column: 2;
-    margin-left: 20%;
-    margin-top: -6%;
-    font-family: monospace;
-}
-.h4_6 {
-    grid-column: 3;
-    margin-left: 20%;
-    margin-top: -25%;
-}
-.h5_6 {
-    grid-column: 3;
-    margin-left: 20%;
-    margin-top:-18%;
-}
-.p_6 {
-    grid-column: 3;
-    margin-left: 20%;
-    margin-top: -6%;
-    font-family: monospace;
-}
+
